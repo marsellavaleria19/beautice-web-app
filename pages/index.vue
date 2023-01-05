@@ -1,0 +1,58 @@
+<template class="bg-white">
+  <div>
+    <HeaderLandingPage />
+    <!-- MAIN SERVICE -->
+    <section
+      class="mt-[50px] md:mt-[131px]"
+      data-aos="fade-right"
+    >
+      <MainService />
+    </section>
+    <!-- ABOUT -->
+    <section
+      class="about-section w-full mt-[-50px] md:mt-[-300px] h-[1028.89px]"
+      data-aos="fade-left"
+      data-aos-delay="1000"
+    >
+      <AboutLandingPage />
+    </section>
+    <!-- PROFESSIONAL TEAM -->
+    <section class="mt-[50px] sm:mt-[-157px]" data-aos="fade-right">
+      <ProfessionalTeam />
+    </section>
+    <section class="contact-section h-[1072px] mt-[-50px] md:mt-[-100px] pt-[50px] md:pt-[100px] lg:pt-[207px]">
+      <ContactLandingPage />
+    </section>
+    <BaseFooter class="mt-[69.66px]" />
+  </div>
+</template>
+
+<script>
+import HeaderLandingPage from '~/components/LandingPage/Header'
+import MainService from '~/components/LandingPage/MainService'
+import AboutLandingPage from '~/components/LandingPage/About'
+import ProfessionalTeam from '~/components/LandingPage/ProfessionalTeam'
+import ContactLandingPage from '~/components/LandingPage/Contact'
+import aosMixin from '~/mixins/aos'
+
+export default {
+  name: 'IndexPage',
+  components: {
+    HeaderLandingPage,
+    MainService,
+    AboutLandingPage,
+    ProfessionalTeam,
+    ContactLandingPage
+  },
+  mixins: [aosMixin]
+}
+</script>
+
+<style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+</style>

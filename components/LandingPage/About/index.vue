@@ -1,0 +1,53 @@
+<template>
+  <div class="container mx-auto max-w-[1291px] pt-[200px] md:pt-[300px] lg:pt-[400px]">
+    <h1 class="text-[#FF64AE] font-semibold text-[16px]">
+      About Us
+    </h1>
+    <div class="lg:flex items-center justify-center">
+      <div class="flex-1">
+        <h1 class="text-[#091156] text-[36px] font-semibold">
+          We are the best beauty clinic
+        </h1>
+        <p class="text-[16px] text-[#8B8B8B] mt-[12px] justify-start">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet. Egestas volutpat facilisi eu libero. Nunc, ipsum ornare mauris sit quam quis enim. Varius tellus in suspendisse placerat.
+
+          Id dui erat sed quam tellus in purus. Pellentesque congue fringilla cras tellus enim.
+        </p>
+        <div class="sm:flex items-center justify-center mt-[49px]">
+          <BaseButton title-button="Learn More" class="h-[58px] w-full sm:w-[200px] mr-[44px] mb-[20px] sm:mb-0" />
+          <nuxt-link to="#">
+            <div class="flex items-center justify-center">
+              <div class="rounded-full h-[49px] w-[49px] bg-[#091156] text-center p-[14.7px] mr-[13px]">
+                <PolygonPlay class="text-center h-[20px] w-[20px]" />
+              </div>
+              <span class="text-[16px] text-[#8B8B8B] font-semibold tracking-widest">Watch Video</span>
+            </div>
+          </nuxt-link>
+        </div>
+      </div>
+      <div class="flex-shrink-0">
+        <div class="flex justify-center">
+          <img src="~/assets/image/about-landing-page.svg" alt="about" height="350" width="476">
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import PolygonPlay from '~/assets/icons/polygon-play.svg?inline'
+export default {
+  name: 'AboutLandingPage',
+  components: {
+    PolygonPlay
+  }
+}
+</script>
+
+<style scoped>
+.about-section{
+    background-image: url('~/assets/image/background-header-about.svg');
+    background-repeat: no-repeat;
+    background-position:right;
+  }
+</style>
