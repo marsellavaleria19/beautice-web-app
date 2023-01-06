@@ -18,7 +18,7 @@
           v-for="slide in 3"
           :key="slide"
         >
-          <div class="flex justify-center items-center mb-[100px]">
+          <div class="md:flex justify-center items-center mb-[100px]">
             <div class="mr-[22px]">
               <h1 class="text-[48px] text-[#091156] font-poppins font-semibold">
                 Clinic & beauty consultant
@@ -30,7 +30,7 @@
               <BaseButton title-button="More Details" class="w-[200px] h-[58px] mt-[28px]" />
             </div>
             <div class="hidden md:block">
-              <img src="~/assets/image/header-ilustration.svg" alt="header-ilustration" width="601" height="398">
+              <img src="~/assets/image/ilustration/header-ilustration.svg" alt="header-ilustration" width="601" height="398">
             </div>
           </div>
         </swiper-slide>
@@ -44,7 +44,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper'
 
 import { SwiperCore, Swiper, SwiperSlide } from 'swiper-vue2'
 
-// Import Swiper styles
+// import Swiper styles
 import 'swiper/swiper-bundle.css'
 
 import '~/assets/css/swiper-custom.css'

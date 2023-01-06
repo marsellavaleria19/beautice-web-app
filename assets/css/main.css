@@ -11,6 +11,14 @@ body{
   background-color: white;
 }
 
+h1{
+  @apply text-[16px] text-[#FF64AE] font-semibold
+}
+
+h2{
+  @apply text-[36px] text-[#091156] font-semibold
+}
+
 .page-enter-active,
 .page-leave-active {
   transition: opacity 3s;
