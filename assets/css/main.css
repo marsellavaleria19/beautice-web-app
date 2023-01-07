@@ -19,6 +19,10 @@ h2{
   @apply text-[36px] text-[#091156] font-semibold
 }
 
+p{
+  @apply text-[#8B8B8B] tracking-widest text-[16px]
+}
+
 .page-enter-active,
 .page-leave-active {
   transition: opacity 3s;
