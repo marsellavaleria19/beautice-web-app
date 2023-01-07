@@ -35,6 +35,9 @@ export default {
     return {
       dataService
     }
+  },
+  mounted () {
+    this.$store.commit('setActivePage', 'Service')
   }
 }
 </script>

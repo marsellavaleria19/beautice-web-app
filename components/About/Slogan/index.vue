@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[url('~/assets/image/slogan/background-slogan.svg')] bg-no-repeat bg-cover h-[529px]">
+  <BaseBannerSlogan>
     <div class="bg-[#09115699] h-[529px] text-center flex items-center justify-center">
       <div class="max-w-[732px] container mx-auto">
         <h1 class="text-[#ABB4FF] font-semibold text-[16px] mb-[12px]">
@@ -13,7 +13,7 @@
         </p>
       </div>
     </div>
-  </div>
+  </BaseBannerSlogan>
 </template>
 
 <script>

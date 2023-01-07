@@ -44,7 +44,10 @@ export default {
     ProfessionalTeam,
     ContactLandingPage
   },
-  mixins: [aosMixin]
+  mixins: [aosMixin],
+  mounted () {
+    this.$store.commit('setActivePage', 'Home')
+  }
 }
 </script>
 

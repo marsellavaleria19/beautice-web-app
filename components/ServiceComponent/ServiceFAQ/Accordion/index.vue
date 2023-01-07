@@ -65,15 +65,6 @@ export default {
     transform: rotate(0deg);
   }
 
-  /* .arrow svg rect{
-    fill:#FAFAFA;
-    stroke: #EEEEEE;
-  } */
-
-  .arrow svg line{
-    stroke: #757575;
-  }
-
   details[open] {
     background-color: #F6F7FF;
     border-radius: 0px 0px 20px 20px;
@@ -91,12 +82,5 @@ export default {
     transform: rotate(180deg);
     transition: 0.4s;
   }
-
-  /* details[open] > summary .arrow svg line {
-    stroke:white;
-  }
-  details[open] > summary .arrow svg rect {
-    fill: #16A75C;
-  } */
 
 </style>

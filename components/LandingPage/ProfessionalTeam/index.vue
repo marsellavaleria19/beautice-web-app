@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="container mx-auto md:pt-[354px] lg:pt-[200px]">
     <h1 class="text-[#FF64AE] text-center text-[16px] font-semibold">
       Professional Teams
     </h1>

@@ -1,5 +1,5 @@
 <template>
-  <BaseSlogan background="background-slogan-service.svg">
+  <BaseBannerSlogan background="background-slogan-service.svg">
     <div class="container mx-auto max-w-[1067px] pt-[30px] md:pt-[100px] lg:py-[182px]">
       <div class="lg:flex justify-center items-center">
         <div class="w-full lg:max-w-[600px] text-center lg:text-left">
@@ -18,7 +18,7 @@
         </div>
       </div>
     </div>
-  </BaseSlogan>
+  </BaseBannerSlogan>
 </template>
 
 <script>

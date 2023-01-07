@@ -1,14 +1,14 @@
 const navigator:{}[] = [{
   name: 'Home',
-  link: '#'
+  link: '/'
 },
 {
   name: 'About',
-  link: '#'
+  link: '/about'
 },
 {
   name: 'Service',
-  link: '#'
+  link: '/service'
 },
 {
   name: 'Gallery',

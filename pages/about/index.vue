@@ -75,6 +75,9 @@ export default {
     return {
       vision, mission
     }
+  },
+  mounted () {
+    this.$store.commit('setActivePage', 'About')
   }
 }
 </script>
