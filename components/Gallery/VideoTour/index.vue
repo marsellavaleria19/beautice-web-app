@@ -1,6 +1,6 @@
 <template>
   <BaseBannerSlogan background="background-video-tour.svg">
-    <div class="py-[170px] text-center container mx-auto lg:max-w-[555px] h-[628px]">
+    <div class="py-[100px] md:py-[170px] text-center container mx-auto lg:max-w-[555px] h-[628px]">
       <h1 class="text-white text-[36px]">
         Watch the video tour
       </h1>
