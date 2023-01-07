@@ -1,17 +1,17 @@
 const mainService: {}[] = [{
   name: 'Beauty consultantion',
   description: 'Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.',
-  image: 'beauty-consultation.svg'
+  image: 'beauty-consultation-ilustration.svg'
 },
 {
   name: 'Skin treatments',
   description: 'Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.',
-  image: 'skin-treatment.svg'
+  image: 'skin-treatment-ilustration.svg'
 },
 {
   name: 'Beauty product',
   description: 'Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.',
-  image: 'beauty-product.svg'
+  image: 'beauty-product-ilustration.svg'
 }
 ]
 

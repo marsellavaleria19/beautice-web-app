@@ -2,7 +2,7 @@
   <div class="container mx-auto max-w-[1290px]">
     <div class="grid grid-cols-1 md:grid-cols-2">
       <div class="hidden md:block">
-        <img src="~/assets/image/contact-animation.svg" alt="contact-animation" height="402" width="519" class="mt-[268.44px]">
+        <img src="~/assets/image/ilustration/contact-ilustration.svg" alt="contact-animation" height="402" width="519" class="mt-[268.44px]">
       </div>
       <div>
         <h1 class="text-[#FF64AE] text-[16px] font-semibold">

@@ -9,10 +9,10 @@
     <p class="text-[#8B8B8B] text-[16px] text-center mt-[12px]">
       Porta rhoncus orci condimentum vitae lobortis eu dignissim non massa. Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.
     </p>
-    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:gap-5 xl:gap-14 mt-[82px]">
+    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:gap-5 xl:gap-14 mt-[82px] w-full">
       <div v-for="(item,index) in mainService" :key="item.name" class="flex justify-center mb-3">
-        <BaseCard class="text-center pt-[59px] px-[34px] items-center z-20" data-aos="fade-up" data-aos-offset="200" :data-aos-delay="index * 100">
-          <img :src="require(`~/assets/image/${item.image}`)" :alt="item.name" class="rounded-full mx-auto" height="166" width="166">
+        <BaseCard class="text-center w-full pt-[59px] px-[34px] items-center z-20" data-aos="fade-up" data-aos-offset="200" :data-aos-delay="index * 100">
+          <img :src="require(`~/assets/image/ilustration/${item.image}`)" :alt="item.name" class="rounded-full mx-auto" height="166" width="166">
           <h1 class="text-[18px] font-semibold mt-[58px]">
             {{ item.name }}
           </h1>

@@ -10,14 +10,14 @@
     </section>
     <!-- ABOUT -->
     <section
-      class="about-section w-full mt-[-50px] md:mt-[-300px] h-[1028.89px]"
+      class="mt-[-50px] md:mt-[-300px] bg-[url('~/assets/image/background-header-about.svg')] bg-right bg-no-repeat"
       data-aos="fade-left"
       data-aos-delay="1000"
     >
       <AboutLandingPage />
     </section>
     <!-- PROFESSIONAL TEAM -->
-    <section class="mt-[50px] sm:mt-[-157px]" data-aos="fade-right">
+    <section class="mt-[50px] sm:mt-[-157px]">
       <ProfessionalTeam />
     </section>
     <section class="contact-section h-[1072px] mt-[-50px] md:mt-[-100px] pt-[50px] md:pt-[100px] lg:pt-[207px]">
@@ -44,7 +44,10 @@ export default {
     ProfessionalTeam,
     ContactLandingPage
   },
-  mixins: [aosMixin]
+  mixins: [aosMixin],
+  mounted () {
+    this.$store.commit('setActivePage', 'Home')
+  }
 }
 </script>
 

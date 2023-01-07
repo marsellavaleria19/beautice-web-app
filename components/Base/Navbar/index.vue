@@ -9,14 +9,14 @@
       </div>
       <ul class="hidden lg:flex items-center block text-poppins">
         <li v-for="items in navigator" :key="items.name" class="mr-6">
-          <nuxt-link v-if="isActive==items.name" class="text-[#414880] font-bold" :to="items.link">
+          <nuxt-link v-if="getActivePage==items.name" class="text-[#414880] font-bold" :to="items.link">
             {{ items.name }}+
           </nuxt-link>
           <nuxt-link v-else class="text-[#8B8B8B] text-[16px] font-medium hover:text-[#414880] hover:font-bold" :to="items.link">
             {{ items.name }}
           </nuxt-link>
         </li>
-        <BaseButton title-button="Contact" />
+        <BaseButton title-button="Contact" class="h-[52px] w-[158px]" />
       </ul>
     </div>
   </nav>
@@ -31,6 +31,11 @@ export default {
     return {
       navigator,
       isActive: 'Home'
+    }
+  },
+  computed: {
+    getActivePage () {
+      return this.$store.state.page
     }
   }
 }
