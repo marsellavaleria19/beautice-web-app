@@ -6,7 +6,7 @@
     <section class="mt-[126px]">
       <VideoTour />
     </section>
-    <section class="mt-[120px]">
+    <section class="h-[390px] bg-[url('~/assets/image/background-get-the-quota.svg')] bg-no-repeat bg-right">
       <GetTheQuotaSection />
     </section>
   </div>
