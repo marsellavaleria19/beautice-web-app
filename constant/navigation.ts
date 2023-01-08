@@ -12,11 +12,11 @@ const navigator:{}[] = [{
 },
 {
   name: 'Gallery',
-  link: '#'
+  link: '/gallery'
 },
 {
   name: 'Blog',
-  link: '#'
+  link: '/blog'
 }
 ]
 

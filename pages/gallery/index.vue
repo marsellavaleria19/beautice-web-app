@@ -21,6 +21,9 @@ export default {
   components: {
     GallerySection, VideoTour, GetTheQuotaSection
   },
-  layout: 'BaseLayout'
+  layout: 'BaseLayout',
+  mounted () {
+    this.$store.commit('setActivePage', 'Gallery')
+  }
 }
 </script>
