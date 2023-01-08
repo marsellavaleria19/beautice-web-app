@@ -1,5 +1,5 @@
 <template>
-  <BaseColumn class="container mx-auto justify-items-center place-items-center lg:max-w-[1289.56px]">
+  <BaseColumn class="container mx-auto justify-items-center place-items-center lg:max-w-[1289.56px] pt-[50px] lg:pt-[120px]">
     <div>
       <h1 class="mb-3">
         Get The Quota
