@@ -1,10 +1,7 @@
 <template>
   <div class="pt-[41px]">
     <BaseNavbar />
-    <container class="h-full">
-      <Nuxt />
-    </container>
-
+    <Nuxt />
     <BaseFooter class="bottom-0" />
   </div>
 </template>
