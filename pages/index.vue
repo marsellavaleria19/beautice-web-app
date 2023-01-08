@@ -17,7 +17,7 @@
       <AboutLandingPage />
     </section>
     <!-- PROFESSIONAL TEAM -->
-    <section class="mt-[50px] sm:mt-[-157px]">
+    <section class="mt-[50px] sm:mt-[-157px] md:pt-[354px] lg:pt-[200px]">
       <ProfessionalTeam />
     </section>
     <section class="contact-section h-[1072px] mt-[-50px] md:mt-[-100px] pt-[50px] md:pt-[100px] lg:pt-[207px]">

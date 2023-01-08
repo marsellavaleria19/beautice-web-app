@@ -31,7 +31,9 @@
           <div class="mb-[38px]">
             <BaseTextArea placeholder="Your inquiry here" class="h-[239px]" />
           </div>
-          <BaseButton title-button="Send Message" class="w-[248px] h-[58px]" />
+          <BaseButton class="w-[248px] h-[58px]">
+            Send Message
+          </BaseButton>
         </form>
       </div>
     </div>

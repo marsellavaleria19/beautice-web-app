@@ -9,7 +9,9 @@
       </h2>
       <p>Id dui erat sed quam tellus in purus. Pellentesque congue fringilla cras tellus enim.</p>
     </div>
-    <BaseButton class="w-full mt-8 py-[15px] lg:mt-0 lg:w-[316px]" title-button="Make an Appointment" />
+    <BaseButton class="w-full mt-8 py-[15px] lg:mt-0 lg:w-[316px]">
+      Make an Appointment
+    </BaseButton>
   </BaseColumn>
 </template>
 

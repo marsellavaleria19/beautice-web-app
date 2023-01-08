@@ -1,7 +1,7 @@
 <template>
-  <BaseBannerSlogan background="background-slogan-service.svg">
-    <div class="container mx-auto max-w-[1067px] pt-[30px] md:pt-[100px] lg:py-[182px]">
-      <div class="lg:flex justify-between items-center w-[1142px]">
+  <BaseBannerSlogan background="background-blog-banner.svg">
+    <div class="container mx-auto max-w-[1142px]">
+      <div class="sm:flex justify-between items-center h-[289px]">
         <h1 class="banner-title">
           Blog
         </h1>

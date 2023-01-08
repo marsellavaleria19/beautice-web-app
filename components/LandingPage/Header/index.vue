@@ -27,7 +27,9 @@
                 It is a long established fact that a reader will be
                 by the readable content of a page.
               </p>
-              <BaseButton title-button="More Details" class="w-[200px] h-[58px] mt-[28px]" />
+              <BaseButton class="w-[200px] h-[58px] mt-[28px]">
+                More Details
+              </BaseButton>
             </div>
             <div class="hidden md:block">
               <img src="~/assets/image/ilustration/header-ilustration.svg" alt="header-ilustration" width="601" height="398">
