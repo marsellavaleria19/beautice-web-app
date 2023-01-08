@@ -15,7 +15,9 @@
             Id dui erat sed quam tellus in purus. Pellentesque congue fringilla cras tellus enim.
           </p>
           <div class="sm:flex items-center justify-center mt-[49px]">
-            <BaseButton title-button="Learn More" class="h-[58px] w-full sm:w-[200px] mr-[44px] mb-[20px] sm:mb-0" />
+            <BaseButton class="h-[58px] w-full sm:w-[200px] mr-[44px] mb-[20px] sm:mb-0">
+              Learn More
+            </BaseButton>
             <nuxt-link to="#">
               <div class="flex items-center justify-center">
                 <div class="rounded-full h-[49px] w-[49px] bg-[#091156] text-center p-[14.7px] mr-[13px]">

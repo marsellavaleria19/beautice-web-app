@@ -3,7 +3,7 @@
     <div class="flex items-center justify-between">
       <img src="~/assets/logo/logo-beautic.svg" alt="logo" height="36" width="258">
       <div class="block lg:hidden">
-        <button class="flex items-center px-3 py-2 border rounded text-blackhover:text-white hover:border-white">
+        <button class="flex items-center px-3 py-2 border rounded text-blackhover:text-white hover:border-white" @click="showSideMenu">
           <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
         </button>
       </div>
@@ -16,9 +16,12 @@
             {{ items.name }}
           </nuxt-link>
         </li>
-        <BaseButton title-button="Contact" class="h-[52px] w-[158px]" />
+        <BaseButton class="h-[52px] w-[158px]">
+          Contact
+        </BaseButton>
       </ul>
     </div>
+    <BaseSlideMenu class="lg:hidden" :navigator="navigator" :is-show="isShowSideMenu" @closeSideMenu="showSideMenu" />
   </nav>
 </template>
 
@@ -30,12 +33,18 @@ export default {
   data () {
     return {
       navigator,
-      isActive: 'Home'
+      isActive: 'Home',
+      isShowSideMenu: false
     }
   },
   computed: {
     getActivePage () {
       return this.$store.state.page
+    }
+  },
+  methods: {
+    showSideMenu () {
+      this.isShowSideMenu = !this.isShowSideMenu
     }
   }
 }

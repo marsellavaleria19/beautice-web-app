@@ -5,7 +5,23 @@
     </section>
     <section v-for="(item,index) in dataService" :key="item.title" class="mb-[92x]">
       <div class="container mx-auto max-w-[1140px]">
-        <ColumnSection :title="item.title" :subtitle="item.subtitle" :description="item.description" :image="item.image" :reverse="index==1" />
+        <ColumnSection
+          v-if="index==1"
+          :title="item.title"
+          :subtitle="item.subtitle"
+          :description="item.description"
+          :image="item.image"
+          :reverse="true"
+          data-aos="fade-left"
+        />
+        <ColumnSection
+          v-else
+          :title="item.title"
+          :subtitle="item.subtitle"
+          :description="item.description"
+          :image="item.image"
+          data-aos="fade-right"
+        />
       </div>
     </section>
     <section class="mt-8 lg:mt-[217.5px]">
@@ -22,6 +38,7 @@ import ColumnSection from '~/components/ServiceComponent/ColumnSection'
 import { dataService } from '~/constant/service-page-data.ts'
 import ServiceSlogan from '~/components/ServiceComponent/ServiceSlogan'
 import ServiceFaqSection from '~/components/ServiceComponent/ServiceFAQ'
+import aosMixin from '~/mixins/aos'
 
 export default {
   components: {
@@ -30,6 +47,7 @@ export default {
     ServiceSlogan,
     ServiceFaqSection
   },
+  mixins: [aosMixin],
   layout: 'BaseLayout',
   data () {
     return {

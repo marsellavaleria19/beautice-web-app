@@ -1,5 +1,5 @@
 <template>
-  <BaseColumn class="container mx-auto justify-items-center place-items-center lg:max-w-[1289.56px]">
+  <BaseColumn class="container mx-auto justify-items-center place-items-center lg:max-w-[1289.56px] pt-[50px] lg:pt-[120px]">
     <div>
       <h1 class="mb-3">
         Get The Quota
@@ -9,7 +9,9 @@
       </h2>
       <p>Id dui erat sed quam tellus in purus. Pellentesque congue fringilla cras tellus enim.</p>
     </div>
-    <BaseButton class="w-full mt-8 py-[15px] lg:mt-0 lg:w-[316px]" title-button="Make an Appointment" />
+    <BaseButton class="w-full mt-8 py-[15px] lg:mt-0 lg:w-[316px]">
+      Make an Appointment
+    </BaseButton>
   </BaseColumn>
 </template>
 
