@@ -1,6 +1,5 @@
 <template>
-  <div class="pt-[41px] bg-[url('~/assets/image/background-about-page.svg') bg-no-repeat bg-left-bottom]">
-    <BaseNavbar />
+  <div>
     <section class="mt-[125px] w-full">
       <AboutIndex />
     </section>
@@ -47,9 +46,6 @@
         <ClientSection />
       </section>
     </div>
-    <section class="mt-[124px]">
-      <BaseFooter />
-    </section>
   </div>
 </template>
 
@@ -71,6 +67,7 @@ export default {
     ClientSection
   },
   mixins: [aosMixin],
+  layout: 'BaseLayout',
   data () {
     return {
       vision, mission
