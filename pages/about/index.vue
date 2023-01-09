@@ -11,7 +11,7 @@
       <SloganSection />
     </section>
     <div class="bg-[url('~/assets/image/background-about-page.svg')] bg-no-repeat">
-      <section class="mt-[112px]" data-aos="fade-left">
+      <section class="mt-[112px]" data-aos="fade-left" :data-aos-once="true">
         <VisionMissionSection>
           <template>
             <img :src="require(`~/assets/image/ilustration/${vision.image}`)" class="mb-[20px] mx-auto">
@@ -27,7 +27,7 @@
           </template>
         </VisionMissionSection>
       </section>
-      <section class="mt-[50px] md:[100px]" data-aos="fade-right">
+      <section class="mt-[50px] md:[100px]" data-aos="fade-right" :data-aos-once="true">
         <VisionMissionSection :reverse="true">
           <template #mission>
             <img :src="require(`~/assets/image/ilustration/${mission.image}`)" class="mb-[20px] mx-auto">
