@@ -13,6 +13,7 @@
       class="mt-[-50px] md:mt-[-300px] bg-[url('~/assets/image/background-header-about.svg')] bg-right bg-no-repeat"
       data-aos="fade-left"
       data-aos-delay="1000"
+      :data-aos-once="true"
     >
       <AboutLandingPage />
     </section>

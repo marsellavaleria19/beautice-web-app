@@ -11,7 +11,14 @@
     </p>
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 lg:gap-5 xl:gap-14 mt-[50px] sm:mt-[82px]">
       <div v-for="(item,index) in professionalTeam" :key="item.name" class="flex justify-center mb-2">
-        <BaseCard class=" items-center pt-[40px] sm:pt-[59px] px-[34px] h-[626px] max-w-[424px] md:w-[424px] items-center" :class="{'bg-transparent shadow-none' : index!==1 }" data-aos="flip-left" data-aos-offset="200" :data-aos-delay="index * 100">
+        <BaseCard
+          class=" items-center pt-[40px] sm:pt-[59px] px-[34px] h-[626px] max-w-[424px] md:w-[424px] items-center"
+          :class="{'bg-transparent shadow-none' : index!==1 }"
+          data-aos="flip-left"
+          data-aos-offset="200"
+          :data-aos-delay="index * 100"
+          :data-aos-once="true"
+        >
           <img :src="require(`~/assets/image/user/${item.image}`)" :alt="item.name" class="rounded-full mx-auto" height="166" width="166">
           <h1 class="text-[#FF64AE] text-[16px] font-semibold mt-[53px]">
             {{ item.position }}

@@ -13,6 +13,7 @@
           :image="item.image"
           :reverse="true"
           data-aos="fade-left"
+          :data-aos-once="true"
         />
         <ColumnSection
           v-else
@@ -21,6 +22,7 @@
           :description="item.description"
           :image="item.image"
           data-aos="fade-right"
+          :data-aos-once="true"
         />
       </div>
     </section>
