@@ -1,10 +1,6 @@
 
 <template>
   <CardWidget class="pb-[60px]" title-widget="Recent Post">
-    <!-- <div class="container mx-auto">
-      <h1 class="text-[16px] text-[#091156] font-semibold">
-        Recent Post
-      </h1> -->
     <div class="mt-[30px]">
       <ListRecentPost
         v-for="(item,index) in recentPostWidget"

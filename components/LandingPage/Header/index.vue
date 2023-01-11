@@ -19,11 +19,11 @@
           :key="slide"
         >
           <div class="md:flex justify-center items-center mb-[100px]">
-            <div class="mr-[22px]">
-              <h1 class="text-[48px] text-[#091156] font-poppins font-semibold">
+            <div class="mr-[22px] text-left">
+              <h1 class="text-[48px] text-[#091156] font-poppins font-semibold lg:max-w-[430px]">
                 Clinic & beauty consultant
               </h1>
-              <p class="text-[16px] font-medium">
+              <p class="text-[16px] font-medium max-w-[474px] text-[#091156] tracking-widest">
                 It is a long established fact that a reader will be
                 by the readable content of a page.
               </p>

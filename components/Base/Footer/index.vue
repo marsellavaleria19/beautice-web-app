@@ -43,14 +43,21 @@
           </ul>
         </div>
       </div>
-      <div class="md:flex justify-between items-center mt-[154px]">
+      <div class="flex justify-center md:justify-end mt-[55px] mb-[49.05px]">
+        <BaseButton class="w-[36px] h-[36px] rounded-[5px]" @click.native="scrollToTop">
+          <div class="flex justify-center">
+            <ArrowUpIcon class="w-[18px] h-[18px]" />
+          </div>
+        </BaseButton>
+      </div>
+      <BaseColumn class="place-items-center pb-[91.16px]">
         <div class="flex flex-wrap justify-center">
           <nuxt-link v-for="item in socialMedia" :key="item.name" :to="item.link" class="mr-11">
             <component :is="item.image" class="h-[50px] w-[27.84px] icon-path" />
           </nuxt-link>
         </div>
         <div>© AltDesain Studio 2021 - All right reserved.</div>
-      </div>
+      </BaseColumn>
     </div>
   </footer>
 </template>
@@ -62,14 +69,20 @@ import InstagramIcon from '~/assets/icons/instagram.svg?inline'
 import LinkedinIcon from '~/assets/icons/linkedin.svg?inline'
 import TwitterIcon from '~/assets/icons/twitter.svg?inline'
 import FacebookIcon from '~/assets/icons/facebook.svg?inline'
+import ArrowUpIcon from '~/assets/icons/arrow-up.svg?inline'
 
 export default {
   name: 'BaseFooter',
   components: {
-    YoutubeIcon, InstagramIcon, LinkedinIcon, TwitterIcon, FacebookIcon
+    YoutubeIcon, InstagramIcon, LinkedinIcon, TwitterIcon, FacebookIcon, ArrowUpIcon
   },
   data () {
     return { beauticeData, pagesMenu, informationMenu, socialMedia }
+  },
+  methods: {
+    scrollToTop () {
+      window.scrollTo(0, 0)
+    }
   }
 }
 </script>

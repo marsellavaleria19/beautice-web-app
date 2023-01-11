@@ -1,9 +1,9 @@
 <template>
   <div class="container mx-auto max-w-[1100px] pb-[50px] lg:pb-[141px]">
     <div class="text-center">
-      <h1>Our Service</h1>
-      <h2>We focus on your beauty</h2>
-      <p>Lorem ipsum dolor sit amet</p>
+      <BaseTitle title="Our Service" />
+      <BaseSubtitle subtitle="We focus on your beauty" />
+      <BaseDetail>Lorem ipsum dolor sit amet</BaseDetail>
     </div>
     <div class="mt-[70px]">
       <div class="lg:flex items-center">

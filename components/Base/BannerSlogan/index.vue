@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-no-repeat bg-cover h-full" :style="{'background-image': `url(${require(`@/assets/image/banner-slogan/${background}`)})`}">
+  <div class="bg-no-repeat bg-cover h-fit" :style="{'background-image': `url(${require(`@/assets/image/banner-slogan/${background}`)})`}">
     <div class="bg-[#09115699] h-full">
       <slot />
     </div>

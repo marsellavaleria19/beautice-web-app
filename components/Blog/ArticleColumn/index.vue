@@ -7,7 +7,7 @@
         :category-blog="item.category"
         :title="item.title"
         :description="item.description"
-        :image-path="item.image"
+        :image="item.image"
         class="mb-[50px] lg:mb-[133px]"
       />
       <BasePagination class="text-end" />

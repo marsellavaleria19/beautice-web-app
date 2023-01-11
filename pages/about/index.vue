@@ -15,12 +15,11 @@
           <template>
             <img :src="require(`~/assets/image/ilustration/${vision.image}`)" class="mb-[20px] mx-auto">
             <div class="text-center lg:text-left">
-              <h1 class="mb-[12px]">
-                {{ vision.title }}
-              </h1>
-              <h2 class="lg:max-w-[411px] mb-[24px]">
-                {{ vision.subtitle }}
-              </h2>
+              <BaseTitle :title="vision.title" class="mb-[12px]" />
+              <BaseSubtitle
+                :subtitle="vision.subtitle"
+                class="lg:max-w-[411px] mb-[24px]"
+              />
               <div class="lg:max-w-[475px]" v-html="vision.description" />
             </div>
           </template>
@@ -30,13 +29,9 @@
         <VisionMissionSection :reverse="true">
           <template #mission>
             <img :src="require(`~/assets/image/ilustration/${mission.image}`)" class="mb-[20px] mx-auto">
-            <div class="text-center lg:text-left">
-              <h1 class="mb-[12px]">
-                {{ mission.title }}
-              </h1>
-              <h2 class="lg:max-w-[411px] mb-[24px]">
-                {{ mission.subtitle }}
-              </h2>
+            <div class="text-center lg:text-left order-first">
+              <BaseTitle :title="mission.title" class="mb-[12px]" />
+              <BaseSubtitle :subtitle="mission.subtitle" class="lg:max-w-[545px] mb-[24px]" />
               <div class="lg:max-w-[475px]" v-html="mission.description" />
             </div>
           </template>

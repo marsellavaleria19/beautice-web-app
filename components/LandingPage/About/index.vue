@@ -1,19 +1,15 @@
 <template>
   <div class="h-[1028.89px]">
-    <div class="container mx-auto max-w-[1291px] pt-[200px] md:pt-[300px] lg:pt-[400px]">
-      <h1 class="text-[#FF64AE] font-semibold text-[16px]">
-        About Us
-      </h1>
-      <div class="lg:flex items-center justify-center">
-        <div class="flex-1">
-          <h1 class="text-[#091156] text-[36px] font-semibold">
-            We are the best beauty clinic
-          </h1>
-          <p class="text-[16px] text-[#8B8B8B] mt-[12px] justify-start">
+    <div class="container mx-auto max-w-[1291px] pt-[200px] md:pt-[354.44px] lg:pt-[400px]">
+      <div class="grid grid-cols-1 lg:grid-cols-2 place-items-center">
+        <div>
+          <BaseTitle title="About Us" />
+          <BaseSubtitle subtitle=" We are the best beauty clinic" class="mt-3" />
+          <BaseDetail class="mt-[12px] justify-start lg:max-w-[483px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet. Egestas volutpat facilisi eu libero. Nunc, ipsum ornare mauris sit quam quis enim. Varius tellus in suspendisse placerat.
 
             Id dui erat sed quam tellus in purus. Pellentesque congue fringilla cras tellus enim.
-          </p>
+          </BaseDetail>
           <div class="sm:flex items-center justify-center mt-[49px]">
             <BaseButton class="h-[58px] w-full sm:w-[200px] mr-[44px] mb-[20px] sm:mb-0">
               Learn More
@@ -28,7 +24,7 @@
             </nuxt-link>
           </div>
         </div>
-        <div class="md:flex-shrink-0">
+        <div class="lg:pt-3">
           <img src="~/assets/image/about-landing-page.svg" alt="about" class="w-full h-full" height="350">
         </div>
       </div>

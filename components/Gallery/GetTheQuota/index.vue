@@ -1,13 +1,9 @@
 <template>
   <BaseColumn class="container mx-auto justify-items-center place-items-center lg:max-w-[1289.56px] pt-[50px] lg:pt-[120px]">
     <div>
-      <h1 class="mb-3">
-        Get The Quota
-      </h1>
-      <h2 class="mb-3">
-        Want to be handled by our professional team immediately?
-      </h2>
-      <p>Id dui erat sed quam tellus in purus. Pellentesque congue fringilla cras tellus enim.</p>
+      <BaseTitle title="Get The Quota" class="mb-3" />
+      <BaseSubtitle subtitle="Want to be handled by our professional team immediately?" class="mb-3" />
+      <BaseDetail>Id dui erat sed quam tellus in purus. Pellentesque congue fringilla cras tellus enim.</BaseDetail>
     </div>
     <BaseButton class="w-full mt-8 py-[15px] lg:mt-0 lg:w-[316px]">
       Make an Appointment

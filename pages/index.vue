@@ -3,7 +3,7 @@
     <HeaderLandingPage />
     <!-- MAIN SERVICE -->
     <section
-      class="mt-[50px] md:mt-[131px]"
+      class="mt-[50px] md:mt-[20px] lg:mt-[131px]"
       data-aos="fade-right"
     >
       <MainService />

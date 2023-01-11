@@ -2,20 +2,23 @@
   <BaseBannerSlogan background="background-blog-banner.svg">
     <div class="container mx-auto max-w-[1142px]">
       <div class="sm:flex justify-between items-center h-[289px]">
-        <h1 class="banner-title">
-          Blog
-        </h1>
-        <p class="banner-description">
+        <BannerTitle title="Blog" />
+        <BannerDetail>
           Home • Blog
-        </p>
+        </bannerdetail>
       </div>
     </div>
   </BaseBannerSlogan>
 </template>
 
 <script>
+import BannerTitle from '~/components/Base/BannerSlogan/Title'
+import BannerDetail from '~/components/Base/BannerSlogan/Description'
 export default {
-  name: 'SloganSection'
+  name: 'SloganSection',
+  components: {
+    BannerDetail, BannerTitle
+  }
 }
 </script>
 
