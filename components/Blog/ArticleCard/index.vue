@@ -1,19 +1,15 @@
 <template>
   <div class="rounded-[50px] card-article">
-    <img :src="require(`~/assets/image/${imagePath}`)" class="rounded-b-none" :alt="title" width="730" height="453">
+    <img :src="require(`~/assets/image/blog/${image}`)" class="rounded-b-none" :alt="title" width="730" height="453">
     <div class="bg-white container mx-auto rounded-b-[50px]">
-      <div class="flex items-center mt-[56px]">
+      <div class="flex items-center mt-[56px] h-[30px]">
         <FolderIcon class="w-[25px] h-[25px] mr-[15px]" />
-        <h1>
-          {{ categoryBlog }}
-        </h1>
+        <BaseTitle :title="categoryBlog" />
       </div>
-      <h2 class="mt-[20px]">
-        {{ title }}
-      </h2>
-      <p class="mt-[12px]">
+      <BaseSubtitle class="mt-[20px]" :subtitle="title" />
+      <BaseDetail class="mt-[12px]">
         {{ description }}
-      </p>
+      </BaseDetail>
       <BaseButton class="mt-[13px] mb-[100px] lg:max-w-[226px] h-[58px]">
         <div class="flex items-center justify-center">
           <div class="text-[16px] tracking-widest">
@@ -49,9 +45,9 @@ export default {
       type: String,
       default: ''
     },
-    imagePath: {
+    image: {
       type: String,
-      default: 'background-blog-banner.svg'
+      default: ''
     }
   }
 

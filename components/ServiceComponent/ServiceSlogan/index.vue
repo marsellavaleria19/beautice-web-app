@@ -3,12 +3,10 @@
     <div class="container mx-auto max-w-[1067px] pt-[30px] md:pt-[100px] lg:py-[182px]">
       <div class="lg:flex justify-center items-center">
         <div class="w-full lg:max-w-[600px] text-center lg:text-left">
-          <h1 class="text-white text-[36px] font-semibold mb-[12px]">
-            Best responsibility and service for our customers
-          </h1>
-          <p class="text-[#CACACA]">
+          <BannerTitle title="Best responsibility and service for our customers" class="mb-[12px]" />
+          <BannerDetail>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis
-          </p>
+          </BannerDetail>
         </div>
         <div class="flex items-center justify-center mt-10 lg:mt-0">
           <div class="w-[127px] h-[127px] border-2 border-white rounded-full mr-[28px]">
@@ -22,11 +20,13 @@
 </template>
 
 <script>
+import BannerTitle from '~/components/Base/BannerSlogan/Title'
+import BannerDetail from '~/components/Base/BannerSlogan/Description'
 import PolygonPlayIcon from '~/assets/icons/polygon-play.svg?inline'
 export default {
   name: 'SloganSection',
   components: {
-    PolygonPlayIcon
+    PolygonPlayIcon, BannerDetail, BannerTitle
   }
 }
 </script>

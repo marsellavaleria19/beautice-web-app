@@ -1,14 +1,10 @@
 <template>
   <div class="container mx-auto">
-    <h1 class="text-[#FF64AE] text-center text-[16px] font-semibold">
-      Professional Teams
-    </h1>
-    <h2 class="text-[#091156] text-[36px] text-center font-semibold mt-[12px]">
-      The Professional expert
-    </h2>
-    <p class="text-[#8B8B8B] text-[16px] text-center mt-[12px]">
+    <BaseTitle title="Professional Teams" class="text-center" />
+    <BaseSubtitle subtitle="The Professional expert" class="text-center mt-[12px]" />
+    <BaseDetail class="text-center mt-[12px]">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.
-    </p>
+    </BaseDetail>
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 lg:gap-5 xl:gap-14 mt-[50px] sm:mt-[82px]">
       <div v-for="(item,index) in professionalTeam" :key="item.name" class="flex justify-center mb-2">
         <BaseCard
@@ -20,15 +16,11 @@
           :data-aos-once="true"
         >
           <img :src="require(`~/assets/image/user/${item.image}`)" :alt="item.name" class="rounded-full mx-auto" height="166" width="166">
-          <h1 class="text-[#FF64AE] text-[16px] font-semibold mt-[53px]">
-            {{ item.position }}
-          </h1>
-          <h2 class="text-[18px] font-semibold mt-[15px]">
-            {{ item.name }}
-          </h2>
-          <p class="text-[#8B8B8B] text-[14px] mt-[6px]">
+          <BaseTitle :title="item.position" class="mt-[53px]" />
+          <BaseSubtitle :subtitle="item.name" class="text-[18px] mt-[15px]" />
+          <BaseDetail class="text-[14px] mt-[6px]">
             {{ item.description }}
-          </p>
+          </BaseDetail>
           <div class="flex mt-[50px] justify-center ">
             <nuxt-link class="h-[49px] w-[49px] bg-white rounded-full shadow-[_-2px_6px_16px_-1px_#E6E9FD] mr-[34px] p-[12px]" to="#">
               <TwitterIcon class="h-[25px] w-[25px]" />

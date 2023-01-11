@@ -3,15 +3,11 @@
     <template>
       <img :src="require(`~/assets/image/ilustration/${image}`)" :ält="title" :class="{'md:order-last':reverse}" width="475" height="314">
       <div>
-        <h1 class="mb-[12px]">
-          {{ title }}
-        </h1>
-        <h2 class="mb-[12px]">
-          {{ subtitle }}
-        </h2>
-        <p class="mb-[9px]">
+        <BaseTitle :title="title" class="mb-[12px]" />
+        <BaseSubtitle class="mb-[12px]" :subtitle="subtitle" />
+        <BaseDetail class="mb-[9px]">
           {{ description }}
-        </p>
+        </BaseDetail>
         <nuxt-link class="text-[#091156] text-[16px] font-semibold tracking-widest" :to="link">
           <div class="flex">
             <div class="mr-[13px]">
