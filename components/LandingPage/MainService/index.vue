@@ -1,18 +1,24 @@
 <template>
   <div class="container mx-auto max-w-[1140px]">
-    <BaseTitle title="Main Service" class="text-center" />
-    <BaseSubtitle subtitle="Learn services to focus on your beauty" class="text-center mt-[12px]" />
-    <BaseDetail class="text-center mt-[12px]">
+    <h1 class="text-[#FF64AE] text-center text-[16px] font-semibold">
+      Main Service
+    </h1>
+    <h2 class="text-[#091156] text-[36px] text-center font-semibold mt-[12px]">
+      Learn services to focus on your beauty
+    </h2>
+    <p class="text-[#8B8B8B] text-[16px] text-center mt-[12px]">
       Porta rhoncus orci condimentum vitae lobortis eu dignissim non massa. Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.
-    </BaseDetail>
+    </p>
     <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:gap-5 xl:gap-14 mt-[82px] w-full">
       <div v-for="(item,index) in mainService" :key="item.name" class="flex justify-center mb-3">
         <BaseCard class="text-center w-full pt-[59px] px-[34px] items-center z-20" data-aos="fade-up" data-aos-offset="200" :data-aos-delay="index * 100" :data-aos-once="true">
           <img :src="require(`~/assets/image/ilustration/${item.image}`)" :alt="item.name" class="rounded-full mx-auto" height="166" width="166">
-          <BaseTitle :title="item.name" class="text-[18px] mt-[58px]" />
-          <BaseDetail class="mt-[6px]">
+          <h1 class="text-[18px] font-semibold mt-[58px] text-[#091156] h-[37px]">
+            {{ item.name }}
+          </h1>
+          <p class="text-[#8B8B8B] text-[14px] mt-[6px]">
             {{ item.description }}
-          </BaseDetail>
+          </p>
         </BaseCard>
       </div>
     </div>
