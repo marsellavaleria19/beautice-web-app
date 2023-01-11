@@ -8,7 +8,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis
           </BannerDetail>
         </div>
-        <div class="flex items-center justify-center mt-10 lg:mt-0">
+        <div class="flex items-center justify-center mt-10 lg:mt-0 pb-8">
           <div class="w-[127px] h-[127px] border-2 border-white rounded-full mr-[28px]">
             <PolygonPlayIcon class="polygon-play-icon w-[65px] h-[65px] mt-[32px] ml-[32px] mr-[30px] mb-[30px]" />
           </div>

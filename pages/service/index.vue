@@ -3,7 +3,7 @@
     <section class="h-fit bg-[url('~/assets/image/background-service-page.svg')] bg-cover bg-no-repeat mb-[59px]">
       <ServiceSection />
     </section>
-    <section v-for="(item,index) in dataService" :key="item.title" class="mb-[92x]">
+    <section v-for="(item,index) in dataService" :key="item.title" class="mb-[50px] lg:mb-[121px]">
       <div class="container mx-auto max-w-[1140px]">
         <ColumnSection
           v-if="index==1"

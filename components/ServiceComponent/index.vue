@@ -2,7 +2,7 @@
   <div class="container mx-auto max-w-[1100px] pb-[50px] lg:pb-[141px]">
     <div class="text-center">
       <BaseTitle title="Our Service" />
-      <BaseSubtitle title="We focus on your beauty" />
+      <BaseSubtitle subtitle="We focus on your beauty" />
       <BaseDetail>Lorem ipsum dolor sit amet</BaseDetail>
     </div>
     <div class="mt-[70px]">

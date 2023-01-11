@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto max-w-[1140px]">
     <BaseTitle title="About" class="mb-3 max-w-[732px]" />
-    <BaseSubtitle title="We are a leading beauty clinic that has been around since 2022" class="max-w-[732px] mb-[12px]" />
+    <BaseSubtitle subtitle="We are a leading beauty clinic that has been around since 2022" class="max-w-[732px] mb-[12px]" />
     <BaseDetail class="text-[#8B8B8B] text-[16px] tracking-widest max-w-[680px] mb-[58px]">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis
     </BaseDetail>

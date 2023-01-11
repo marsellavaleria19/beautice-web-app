@@ -1,8 +1,8 @@
 <template>
-  <div class="lg:flex lg:justify-between items-center container mx-auto max-w-[1137px] " :class="{'flex-row-reverse':reverse}">
+  <BaseColumn class="container mx-auto max-w-[1137px] lg:gap-[50px]" :class="{'flex-row-reverse':reverse}">
     <slot name="mission" />
     <slot />
-  </div>
+  </BaseColumn>
 </template>
 
 <script>

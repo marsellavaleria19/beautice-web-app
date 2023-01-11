@@ -1,8 +1,10 @@
 <template>
   <div class="container mx-auto max-w-[972px]">
-    <BaseSubtitltle subtitle="Services FAQ's" class="text-center mt-8 md:mt-[116px] mb-[21px]" />
+    <h1 class="text-[36px] text-[#091156] font-semibold text-center mt-8 md:mt-[116px] mb-[21px]">
+      Services FAQ’s
+    </h1>
     <div class="flex justify-center mb-[68px]">
-      <div class="border-b-[5px] border-[#FF64AE] w-[48px]" />
+      <div class="border-b-[5px] border-[#FF64AE] w-[40px] rounded-sm" />
     </div>
 
     <div>
