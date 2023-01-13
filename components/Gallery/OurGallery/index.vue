@@ -25,6 +25,6 @@
 
 <script>
 export default {
-  name: 'GallerySection'
+  name: 'OurGallerySection'
 }
 </script>
