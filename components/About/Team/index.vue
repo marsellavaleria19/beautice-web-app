@@ -1,16 +1,11 @@
 <template>
   <div class="h-[1533.5px] pt-[650px] md:pt-[700px]">
-    <ProfessionalTeam />
+    <BaseProfessionalTeam />
   </div>
 </template>
 
 <script>
-import ProfessionalTeam from '~/components/LandingPage/ProfessionalTeam'
-
 export default {
-  name: 'TeamAbout',
-  components: {
-    ProfessionalTeam
-  }
+  name: 'TeamAbout'
 }
 </script>

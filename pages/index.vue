@@ -19,7 +19,7 @@
     </section>
     <!-- PROFESSIONAL TEAM -->
     <section class="mt-[50px] sm:mt-[-157px] md:pt-[354px] lg:pt-[200px]">
-      <ProfessionalTeam />
+      <BaseProfessionalTeam />
     </section>
     <section class="contact-section h-[1072px] mt-[-50px] md:mt-[-100px] pt-[50px] md:pt-[100px] lg:pt-[207px]">
       <ContactLandingPage />
@@ -32,7 +32,6 @@
 import HeaderLandingPage from '~/components/LandingPage/Header'
 import MainService from '~/components/LandingPage/MainService'
 import AboutLandingPage from '~/components/LandingPage/About'
-import ProfessionalTeam from '~/components/LandingPage/ProfessionalTeam'
 import ContactLandingPage from '~/components/LandingPage/Contact'
 import aosMixin from '~/mixins/aos'
 
@@ -42,7 +41,6 @@ export default {
     HeaderLandingPage,
     MainService,
     AboutLandingPage,
-    ProfessionalTeam,
     ContactLandingPage
   },
   mixins: [aosMixin],
