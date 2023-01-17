@@ -1,36 +1,18 @@
 <template>
   <div class="container mx-auto max-w-[1290px]">
-    <div class="grid grid-cols-1 md:grid-cols-2">
-      <div class="hidden md:block">
-        <img src="~/assets/image/ilustration/contact-ilustration.svg" alt="contact-animation" height="402" width="519" class="mt-[268.44px]">
+    <div class="grid grid-cols-1 lg:grid-cols-2 place-items-center">
+      <div class="hidden lg:block h-[614px] w-[520px]">
+        <img src="~/assets/image/ilustration/contact-ilustration.svg" alt="contact-animation" height="402" width="519" class="mt-[50px]">
       </div>
-      <div>
+      <div class="container mx-auto text-center lg:text-left">
         <BaseTitle title="Contact Us" />
-        <BaseSubtitle subtitle="Learn services to focus on your beauty" class="mt-[12px]" />
+        <BaseSubtitle subtitle="Send your inquiry to our expert team" class="mt-[12px] lg:max-w-[404px]" />
         <BaseDetail class="mt-[12px]">
           Lorem ipsum dolor sit amet nulla turapis tellus.
         </BaseDetail>
-        <form class="mt-[44px] mb-[69.66px]">
-          <div class="mb-[38px] md:flex">
-            <BaseInput placeholder="Firstname" class="mr-[36px] md:w-1/2 mb-[38px] md:mb-0" />
-            <BaseInput placeholder="Lastname" class="md:w-1/2" />
-          </div>
-          <div class="mb-[38px]">
-            <BaseInput placeholder="Email Address" />
-          </div>
-          <div class="mb-[38px]">
-            <BaseInput placeholder="Subject Message" />
-          </div>
-          <div class="mb-[38px]">
-            <BaseInput placeholder="Email Address" />
-          </div>
-          <div class="mb-[38px]">
-            <BaseTextArea placeholder="Your inquiry here" class="h-[239px]" />
-          </div>
-          <BaseButton class="w-full lg:max-w-[248px] h-[58px]">
-            Send Message
-          </BaseButton>
-        </form>
+        <div class="mt-[44px] mb-[69.66px] md:max-w-[520px]">
+          <BaseContactForm />
+        </div>
       </div>
     </div>
   </div>

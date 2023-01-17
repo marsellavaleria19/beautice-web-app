@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import GallerySection from '~/components/Gallery'
+import GallerySection from '~/components/Gallery/OurGallery'
 import VideoTour from '~/components/Gallery/VideoTour'
 import GetTheQuotaSection from '~/components/Gallery/GetTheQuota'
 

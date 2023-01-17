@@ -48,7 +48,7 @@ import TwitterIcon from '~/assets/icons/twitter.svg?inline'
 import aosMixin from '~/mixins/aos'
 
 export default {
-  name: 'ProfessionalTeam',
+  name: 'BaseProfessionalTeam',
   components: {
     InstagramIcon, FacebookIcon, TwitterIcon
   },
