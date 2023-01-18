@@ -1,8 +1,8 @@
 <template>
-  <BaseColumn class="container mx-auto max-w-[1400px] md:gap-[60px]">
+  <BaseColumn class="container mx-auto max-w-[1140px] gap-x-[60px]">
     <section>
       <ArticleCard
-        v-for="item in articleBlogData"
+        v-for="item in getArticleBlogData"
         :key="item.category"
         :category-blog="item.category"
         :title="item.title"
@@ -10,12 +10,14 @@
         :image="item.image"
         class="mb-[50px] lg:mb-[133px]"
       />
-      <BasePagination class="text-end" />
+      <div class="mr-[97px]">
+        <BasePagination class="text-end" />
+      </div>
     </section>
     <section>
-      <WidgetSection />
+      <SearchWidget @search="searchHandle" />
       <RecentPostWidget class="mt-[76px]" />
-      <CategoryWidget class="mt-[83px]" />
+      <CategoryWidget class="mt-[83px]" @category="categoryHandle" />
       <TagWidget class="mt-[83px]" />
       <SocialMediaWidget class="mt-[83px]" />
     </section>
@@ -25,7 +27,7 @@
 <script>
 import { articleBlogData } from '~/constant/blog-page-data.ts'
 import ArticleCard from '~/components/Blog/ArticleCard'
-import WidgetSection from '~/components/Blog/SearchWidget'
+import SearchWidget from '~/components/Blog/SearchWidget'
 import RecentPostWidget from '~/components/Blog/RecentPostWidget'
 import CategoryWidget from '~/components/Blog/CategoryWidget'
 import TagWidget from '~/components/Blog/TagWidget'
@@ -35,7 +37,7 @@ export default {
   name: 'ArticleColumn',
   components: {
     ArticleCard,
-    WidgetSection,
+    SearchWidget,
     RecentPostWidget,
     CategoryWidget,
     TagWidget,
@@ -43,7 +45,26 @@ export default {
   },
   data () {
     return {
-      articleBlogData
+      articleBlogData,
+      search: '',
+      category: ''
+    }
+  },
+  computed: {
+    getArticleBlogData () {
+      return this.search !== '' ? articleBlogData.filter(item => item.title.includes(this.search)) : this.category !== '' ? articleBlogData.filter(item => item.category.includes(this.category)) : articleBlogData
+    }
+    // getArticleBlogDataByCategory () {
+    //   return articleBlogData.filter(item => item.category.includes(this.category))
+    // }
+  },
+  methods: {
+    searchHandle (value) {
+      this.search = value
+    },
+    categoryHandle (value) {
+      this.category = value
+      console.log(value)
     }
   }
 }

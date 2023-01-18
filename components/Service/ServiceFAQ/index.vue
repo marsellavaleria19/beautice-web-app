@@ -15,7 +15,7 @@
 
 <script>
 import { dataServiceFaq } from '~/constant/service-page-data'
-import Accordion from '~/components/ServiceComponent/ServiceFAQ/Accordion'
+import Accordion from '~/components/Service/ServiceFAQ/Accordion'
 
 export default {
   name: 'ServiceFaq',

@@ -35,11 +35,11 @@
   </div>
 </template>
 <script>
-import ServiceSection from '~/components/ServiceComponent'
-import ColumnSection from '~/components/ServiceComponent/ColumnSection'
+import ServiceSection from '~/components/Service/OurService'
+import ColumnSection from '~/components/Service/ColumnSection'
 import { dataService } from '~/constant/service-page-data.ts'
-import ServiceSlogan from '~/components/ServiceComponent/ServiceSlogan'
-import ServiceFaqSection from '~/components/ServiceComponent/ServiceFAQ'
+import ServiceSlogan from '~/components/Service/ServiceSlogan'
+import ServiceFaqSection from '~/components/Service/ServiceFAQ'
 import aosMixin from '~/mixins/aos'
 
 export default {
