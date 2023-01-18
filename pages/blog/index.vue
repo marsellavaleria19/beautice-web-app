@@ -1,7 +1,7 @@
 <template>
-  <section class="mt-[108px]">
+  <section class="mt-[36px]">
     <BlogBanner />
-    <section class="mt-[103px]">
+    <section class="mt-[108px]">
       <ArticleColumn />
     </section>
   </section>
