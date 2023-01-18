@@ -13,7 +13,7 @@
       <section class="mt-[112px]" data-aos="fade-left" :data-aos-once="true">
         <VisionMissionSection>
           <template>
-            <img :src="require(`~/assets/image/ilustration/${vision.image}`)" class="mb-[20px] mx-auto">
+            <img :src="require(`~/assets/image/ilustration/${vision.image}`)" loading="lazy" class="mb-[20px] mx-auto">
             <div class="text-center lg:text-left">
               <BaseTitle :title="vision.title" class="mb-[12px]" />
               <BaseSubtitle
@@ -28,7 +28,7 @@
       <section class="mt-[50px] md:[100px]" data-aos="fade-right" :data-aos-once="true">
         <VisionMissionSection :reverse="true">
           <template #mission>
-            <img :src="require(`~/assets/image/ilustration/${mission.image}`)" class="mb-[20px] mx-auto">
+            <img :src="require(`~/assets/image/ilustration/${mission.image}`)" loading="lazy" class="mb-[20px] mx-auto">
             <div class="text-center lg:text-left order-first">
               <BaseTitle :title="mission.title" class="mb-[12px]" />
               <BaseSubtitle :subtitle="mission.subtitle" class="lg:max-w-[545px] mb-[24px]" />

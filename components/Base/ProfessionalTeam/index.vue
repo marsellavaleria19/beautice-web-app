@@ -14,7 +14,14 @@
           :data-aos-delay="index * 100"
           :data-aos-once="true"
         >
-          <img :src="require(`~/assets/image/user/${item.image}`)" :alt="item.name" class="rounded-full mx-auto" height="166" width="166">
+          <img
+            :src="require(`~/assets/image/user/${item.image}`)"
+            loading="lazy"
+            :alt="item.name"
+            class="rounded-full mx-auto"
+            height="166"
+            width="166"
+          >
           <div class="text-center">
             <BaseTitle :title="item.position" class="mt-[53px]" />
             <BaseSubtitle :subtitle="item.name" class="text-[18px] mt-[15px]" />

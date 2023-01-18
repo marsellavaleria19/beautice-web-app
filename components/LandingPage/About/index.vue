@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="lg:pt-3">
-          <img src="~/assets/image/about-landing-page.svg" alt="about" class="w-full h-full" height="350">
+          <img src="~/assets/image/about-landing-page.svg" alt="about" loading="lazy" class="w-full h-full" height="350">
         </div>
       </div>
     </div>

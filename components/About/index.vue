@@ -6,7 +6,14 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis
     </BaseDetail>
 
-    <img src="~/assets/image/about-image.svg" class="shadow-[_50px_25px_100px_50px_#F6F7FF] rounded-lg" alt="about" height="540" width="1140">
+    <img
+      src="~/assets/image/about-image.svg"
+      loading="lazy"
+      class="shadow-[_50px_25px_100px_50px_#F6F7FF] rounded-lg"
+      alt="about"
+      height="540"
+      width="1140"
+    >
   </div>
 </template>
 

@@ -11,7 +11,7 @@
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-[72px] justify-items-center place-items-stretch gap-9">
       <div v-for="index in 9" :key="index">
-        <img :src="require(`~/assets/image/gallery/${index}.svg`)" alt="gallery" width="356" height="210">
+        <img :src="require(`~/assets/image/gallery/${index}.svg`)" alt="gallery" loading="lazy" width="356" height="210">
       </div>
     </div>
     <BaseDetail class="mt-[66px] lg:max-w-[660px]">
