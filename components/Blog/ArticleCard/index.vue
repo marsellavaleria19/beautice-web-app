@@ -1,6 +1,13 @@
 <template>
   <div class="rounded-[50px] card-article">
-    <img :src="require(`~/assets/image/blog/${image}`)" class="rounded-b-none" :alt="title" width="730" height="453">
+    <img
+      :src="require(`~/assets/image/blog/${image}`)"
+      loading="lazy"
+      class="rounded-b-none"
+      :alt="title"
+      width="730"
+      height="453"
+    >
     <div class="bg-white container mx-auto rounded-b-[50px]">
       <div class="flex items-center mt-[56px] h-[30px]">
         <FolderIcon class="w-[25px] h-[25px] mr-[15px]" />

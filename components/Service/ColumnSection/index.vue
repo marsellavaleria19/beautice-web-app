@@ -1,7 +1,14 @@
 <template>
   <BaseColumn class="gap-5 md:gap-[190px] justify-items-center place-content-stretch">
     <template>
-      <img :src="require(`~/assets/image/ilustration/${image}`)" :ält="title" :class="{'md:order-last':reverse}" width="475" height="314">
+      <img
+        :src="require(`~/assets/image/ilustration/${image}`)"
+        loading="lazy"
+        :ält="title"
+        :class="{'md:order-last':reverse}"
+        width="475"
+        height="314"
+      >
       <div>
         <BaseTitle :title="title" class="mb-[12px]" />
         <BaseSubtitle class="mb-[12px]" :subtitle="subtitle" />

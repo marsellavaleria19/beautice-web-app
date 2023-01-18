@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <img :src="require(`~/assets/image/recent-post/${image}`)" :alt="datePost" width="82" height="82">
+    <img :src="require(`~/assets/image/recent-post/${image}`)" :alt="datePost" loading="lazy" width="82" height="82">
     <div class="ml-[26px]">
       <h1 class="text-[14px] tracking-widest">
         {{ datePost }}
