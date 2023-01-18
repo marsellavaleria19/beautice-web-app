@@ -11,7 +11,6 @@
           class=" items-center pt-[40px] sm:pt-[59px] px-[34px] h-[626px] max-w-[424px] md:w-[424px] items-center"
           :class="{'bg-transparent shadow-none' : index!==1 }"
           data-aos="flip-left"
-          data-aos-offset="200"
           :data-aos-delay="index * 100"
           :data-aos-once="true"
         >
