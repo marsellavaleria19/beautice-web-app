@@ -30,7 +30,9 @@
               Pages
             </h1>
             <li v-for="item in pagesMenu" :key="item.name" class="mb-[11px]">
-              {{ item.name }}
+              <nuxt-link :to="item.link">
+                {{ item.name }}
+              </nuxt-link>
             </li>
           </ul>
           <ul>

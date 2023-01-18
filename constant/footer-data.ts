@@ -6,10 +6,10 @@ const beauticeData:{} = {
 }
 
 const pagesMenu:{}[] = [
-  { name: 'Home', link: '#' },
-  { name: 'About', link: '#' },
-  { name: 'Service', link: '#' },
-  { name: 'Gallery', link: '#' },
+  { name: 'Home', link: '/' },
+  { name: 'About', link: '/about' },
+  { name: 'Service', link: '/service' },
+  { name: 'Gallery', link: '/gallery' },
   { name: 'Team', link: '#' }
 ]
 
